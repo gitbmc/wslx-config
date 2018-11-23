@@ -1,0 +1,12 @@
+#!/bin/bash -i
+if [ -z $DISPLAY ]
+then
+  if [ -z $1 ]
+  then
+    >&2 echo "Warning: DISPLAY environment variable not set and not passed in first argument"
+  else
+    export DISPLAY=$1
+  fi
+fi
+cd $HOME
+source .xinitrc
