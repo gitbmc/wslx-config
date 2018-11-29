@@ -5,7 +5,7 @@ if [ $? -eq 1 ]
 then
   emacs --daemon > /dev/null 2>&1
 fi
-(emacsclient -cqe '(let ((dir default-directory)) (direx:find-directory "/") (direx:goto-item-for-tree (direx:make-directory dir)) (direx:expand-item) (cd dir))' > /dev/null 2>&1  < /dev/null &)
+(emacsclient -cqe '(direx:jump-to-directory-with-context)' > /dev/null &)
 urxvtc -e true > /dev/null 2>&1
 if [ $? -eq 2 ]
 then

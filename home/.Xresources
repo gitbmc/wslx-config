@@ -1,2 +1,3 @@
 URxvt.font: 9x15
 URxvt*saveLines: 65535
+URxvt*reverseVideo: on
