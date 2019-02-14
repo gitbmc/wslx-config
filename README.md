@@ -9,14 +9,14 @@ Windows:
 1. WSL (tested with Ubuntu 18.04)
 2. VcXsrv (tested with 64-bit 1.20.1.3/4)
 
-Unix
-====
+Unix:
 
 1. Homeshick
 2. X Windows utilities (xrdb, etc.; e.g., Ubuntu package x11-xserver-utils)
 3. Emacs (tested with 26.1) (optional: can remove from .xinitrc or replace...)
 
-Instructions:
+Instructions
+============
 
 1. Install homeshick
 2. Add/install "castle"; e.g., homeshick clone gitbmc/wslx-config
